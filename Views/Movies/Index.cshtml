@@ -4,7 +4,7 @@
     ViewData["Title"] = "My Movies";
 }
 
-<h1>Index</h1>
+<h1>My Favorite Movies</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -16,7 +16,8 @@
             <option value="">All</option>
         </select>
 
-        <select asp-for="SelectedYear" asp-items="Model.Years">    
+        <select asp-for="SelectedYear" asp-items="Model.Years">
+            <option value="">Filter by Year</option>   
         </select>
 
         <label>Title: <input type="text" asp-for="SearchString" /></label>
